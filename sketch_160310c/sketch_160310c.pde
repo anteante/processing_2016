@@ -1,4 +1,4 @@
-float rr = 0;
+float rr = 0.5;
 
 void setup() {
   size(800, 800);
@@ -28,8 +28,8 @@ void pattern(float r1, float r2) {
   float x2 = 0;
   float y = 0;
   for (int i = 0; i < 10; i = i+1) {
-    float rrr = random(-2,2);
-    line(x1, y, x2+rrr, y+50);
+    float r3 = random(-5,5);
+    line(x1, y+r3, x2+r3, y+50+r3);
     x1 = x1+5+r1;
     x2 = x2+5+r2;
   }
